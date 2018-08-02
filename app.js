@@ -2,6 +2,13 @@ new Vue({
   el: '#app',
   data: {
     title: 'Becoming a Vue ninja',
+    name: 'Jackson',
+    url: 'http://www.youtube.com',
+    classes: ['one', 'two'],
   },
-  methods: {},
+  methods: {
+    greet(time) {
+      return `Hello and good ${time}, ${this.name}`;
+    },
+  },
 });
